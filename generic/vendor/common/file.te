@@ -136,7 +136,8 @@ type vendor_qmipriod_data_file, file_type, data_file_type;
 type vendor_ipa_vendor_data_file, file_type, data_file_type;
 type vendor_shsusr_data_file, file_type, data_file_type;
 
-type vendor_tombstone_data_file, file_type, data_file_type;
+type rfs_tombstone_data_file, file_type, data_file_type;
+type sdx_tombstone_data_file, file_type, data_file_type;
 type vendor_camera_data_file, file_type, data_file_type;
 type vendor_display_vendor_data_file, file_type, data_file_type;
 type vendor_nfc_vendor_data_file, file_type, data_file_type;

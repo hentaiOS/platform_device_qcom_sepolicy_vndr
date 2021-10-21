@@ -317,7 +317,8 @@
 /data/vendor/misc/qsee(/.*)?           u:object_r:vendor_data_qsee_file:s0
 /data/vendor/tui(/.*)?                 u:object_r:vendor_tui_data_file:s0
 /data/vendor/tzstorage(/.*)?           u:object_r:vendor_data_tzstorage_file:s0
-/data/vendor/tombstones(/.*)?       u:object_r:vendor_tombstone_data_file:s0
+/data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
+/data/vendor/tombstones/SDX55M(/.*)?   u:object_r:sdx_tombstone_data_file:s0
 /data/vendor/time(/.*)?                u:object_r:vendor_time_data_file:s0
 /data/vendor/firmware(/.*)?                u:object_r:vendor_firmware_data_file:s0
 
@@ -327,7 +328,6 @@
 /data/vendor/audio(/.*)? u:object_r:vendor_audio_data_file:s0
 
 # /
-/tombstones                          u:object_r:rootfs:s0
 /vendor/dsp(/.*)?                    u:object_r:adsprpcd_file:s0
 /vendor/vm-system(/.*)?              u:object_r:vendor_vm_system_file:s0
 

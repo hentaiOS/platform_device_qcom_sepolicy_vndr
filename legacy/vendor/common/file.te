@@ -211,7 +211,7 @@ type ipa_vendor_data_file, file_type, data_file_type;
 type vendor_audio_data_file, file_type, data_file_type;
 
 # Tombstone vendor data
-type vendor_tombstone_data_file, file_type, data_file_type;
+type rfs_tombstone_data_file, file_type, data_file_type;
 
 # Port-bridge file types
 type port_bridge_data_file, file_type, data_file_type;

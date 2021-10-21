@@ -41,8 +41,6 @@ allow hal_wifi_supplicant vendor_wifi_vendor_wpa_socket:sock_file create_file_pe
 allow hal_wifi_supplicant vendor_wigig_vendor_wpa_socket:sock_file rw_file_perms;
 allow hal_wifi_supplicant_default hal_wifi_default:binder call;
 allow hal_wifi_supplicant_default hal_wifi_hwservice:hwservice_manager find;
-allow hal_wifi_supplicant_default vendor_tombstone_data_file:dir { open read search };
-allow hal_wifi_supplicant_default vendor_tombstone_data_file:file { getattr open read };
 allow hal_wifi_supplicant_default vendor_log_wifi_data_file:dir search;
 allow hal_wifi_supplicant_default vendor_log_wifi_data_file:dir { add_name write };
 allow hal_wifi_supplicant_default vendor_log_wifi_data_file:file { create getattr open write };

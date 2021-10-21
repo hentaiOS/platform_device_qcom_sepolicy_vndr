@@ -562,7 +562,7 @@
 /data/vendor/vpp(/.*)?                                              u:object_r:vendor_vpp_data_file:s0
 /data/vendor/camera(/.*)?                                           u:object_r:vendor_camera_data_file:s0
 /data/vendor/wifi/wigig_hostapd(/.*)?                               u:object_r:wigig_hostapd_socket:s0
-/data/vendor/tombstones(/.*)?                                       u:object_r:vendor_tombstone_data_file:s0
+/data/vendor/tombstones/rfs(/.*)?                                   u:object_r:rfs_tombstone_data_file:s0
 /data/vendor/tzstorage(/.*)?                                        u:object_r:data_tzstorage_file:s0
 /data/vendor/tloc(/.*)?                                             u:object_r:tlocd_data_file:s0
 /data/vendor/media(/.*)?                                            u:object_r:vendor_media_data_file:s0

@@ -53,8 +53,8 @@ allow vendor_rfs_access vendor_persist_rfs_shared_hlos_file:file create_file_per
 #For QMI sockets and IPCR Sockets
 allow vendor_rfs_access self:{ socket qipcrtr_socket } create_socket_perms_no_ioctl;
 
-allow vendor_rfs_access vendor_tombstone_data_file:dir create_dir_perms;
-allow vendor_rfs_access vendor_tombstone_data_file:file create_file_perms;
+allow vendor_rfs_access rfs_tombstone_data_file:dir create_dir_perms;
+allow vendor_rfs_access rfs_tombstone_data_file:file create_file_perms;
 
 #For access to the kmsg device
 allow vendor_rfs_access kmsg_device:chr_file w_file_perms;
