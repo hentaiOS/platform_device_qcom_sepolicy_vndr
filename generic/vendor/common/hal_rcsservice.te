@@ -51,10 +51,11 @@ wakelock_use(vendor_hal_rcsservice)
 allow vendor_hal_rcsservice self:capability net_bind_service;
 allow vendor_hal_rcsservice self:capability2 wake_alarm;
 
+binder_call(vendor_hal_rcsservice, radio)
+
 #diag
 userdebug_or_eng(`
   diag_use(vendor_hal_rcsservice)
-  binder_call(vendor_hal_rcsservice, radio)
 ')
 
 set_prop(vendor_hal_rcsservice, vendor_ctl_vendor_imsrcsservice_prop)

@@ -30,7 +30,10 @@ allow radio vendor_framework_file:file r_file_perms;
 allow radio vendor_framework_file:dir search;
 
 hwbinder_use(radio)
+binder_call(radio, vendor_hal_imsrtp)
+binder_call(radio, vendor_hal_rcsservice)
 allow radio vendor_hal_imsrtp_hwservice:hwservice_manager find;
+allow radio vendor_hal_imsrcsd_hwservice:hwservice_manager find;
 
 add_service(radio, radio_service)
 allow radio {
@@ -41,8 +44,6 @@ allow radio {
 allow radio vendor_avtimer_device:chr_file r_file_perms;
 # permissions for RCS clients to communicate with RCS vendor service
 userdebug_or_eng(`
-  allow radio vendor_hal_imsrcsd_hwservice:hwservice_manager find;
-  binder_call(radio, vendor_hal_rcsservice);
   #allow RCS clients to communicate with RCS vendor service hosted by imsdaemon
   binder_call(radio, vendor_ims_service)
 ')
