@@ -44,4 +44,6 @@ userdebug_or_eng(`
 
   allow vendor_subsystem_ramdump vendor_mdmhelperdata_data_file:dir r_dir_perms;
   allow vendor_subsystem_ramdump vendor_mdmhelperdata_data_file:file r_file_perms;
+
+  allow vendor_subsystem_ramdump self:netlink_kobject_uevent_socket { create read setopt bind };
 ')
